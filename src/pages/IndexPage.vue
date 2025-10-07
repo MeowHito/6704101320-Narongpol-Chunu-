@@ -97,23 +97,23 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { reactive } from 'vue'
 import { useQuasar } from 'quasar'
 
 const $q = useQuasar()
 
 const buildInitialForm = () => ({
-  studentId: '6704101410',
-  firstName: 'Rattapoom',
-  lastName: 'Maru',
-  email: 'rattapoom.maru@example.com',
+  studentId: '',
+  firstName: '',
+  lastName: '',
+  email: '',
   phone: '',
   program: null,
   notes: '',
   acceptTerms: false
 })
 
-const form = ref(buildInitialForm())
+const form = reactive(buildInitialForm())
 
 const programOptions = [
   { label: 'Software Engineering', value: 'se' },
@@ -127,7 +127,7 @@ const rules = {
 }
 
 const handleSubmit = () => {
-  if (!form.value.acceptTerms) {
+  if (!form.acceptTerms) {
     $q.notify({
       type: 'negative',
       message: 'Please confirm the information before submitting.'
@@ -137,12 +137,12 @@ const handleSubmit = () => {
 
   $q.notify({
     type: 'positive',
-    message: `Thank you, ${form.value.firstName}! Your response has been recorded.`
+    message: `Thank you, ${form.firstName}! Your response has been recorded.`
   })
 }
 
 const handleReset = () => {
-  form.value = buildInitialForm()
+  Object.assign(form, buildInitialForm())
   $q.notify({
     type: 'info',
     message: 'Form cleared.'
