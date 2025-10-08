@@ -195,7 +195,7 @@ export default defineConfig((/* ctx */) => {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: '6704101320-narongpol-chunu-'
+        appId: '/6704101320-narongpol-chunu-'
       }
     },
 
