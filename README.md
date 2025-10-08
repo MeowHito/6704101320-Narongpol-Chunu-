@@ -1,6 +1,6 @@
-# Rattapoom Maru (6704101410-rattapoom-maru)
+# Narongpol chunu (6704101320-Narongpol-chunu)
 
-A Quasar project for Rattapoom Maru
+A Quasar project for Narongpol chunu
 
 ## Install the dependencies
 ```bash
