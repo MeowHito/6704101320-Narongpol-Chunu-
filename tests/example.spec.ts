@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test'
 
 const fillForm = async (page: import('@playwright/test').Page) => {
-  await page.getByLabel('Student ID').fill('6704101410')
-  await page.getByLabel('First Name').fill('Rattapoom')
-  await page.getByLabel('Last Name').fill('Maru')
-  await page.getByLabel('Email').fill('rattapoom.maru@example.com')
+  await page.getByLabel('Student ID').fill('6704101320')
+  await page.getByLabel('First Name').fill('Narongpol')
+  await page.getByLabel('Last Name').fill('chunu')
+  await page.getByLabel('Email').fill('xoasitz@gmail.com')
   await page.getByLabel('Phone').fill('089-999-9999')
   await page.getByLabel('Program').click()
   await page.getByRole('option', { name: 'Software Engineering' }).click()
@@ -32,7 +32,7 @@ test.describe('Student information form', () => {
     await page.getByRole('switch').click()
     await page.getByRole('button', { name: 'Submit' }).click()
 
-    await expect(page.getByText('Thank you, Rattapoom! Your response has been recorded.')).toBeVisible()
+    await expect(page.getByText('Thank you, Narongpol! Your response has been recorded.')).toBeVisible()
   })
 
 })

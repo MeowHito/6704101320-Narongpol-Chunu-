@@ -1,9 +1,9 @@
 {
-  "name": "6704101410-rattapoom-maru",
+  "name": "6704101320-Narongpol-chunu",
   "version": "0.0.1",
-  "description": "A Quasar project for Rattapoom Maru",
-  "productName": "Rattapoom Maru",
-  "author": "Rattapoom Maru",
+  "description": "A Quasar project for Narongpol Chunu",
+  "productName": "Narongpol chunu",
+  "author": "Narongpol chunu",
   "type": "module",
   "private": true,
   "scripts": {

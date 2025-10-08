@@ -103,13 +103,13 @@ import { useQuasar } from 'quasar'
 const $q = useQuasar()
 
 const buildInitialForm = () => ({
-  studentId: '',
-  firstName: '',
-  lastName: '',
-  email: '',
-  phone: '',
-  program: null,
-  notes: '',
+  studentId: '6704101320',
+  firstName: 'narongpol',
+  lastName: 'chunu',
+  email: 'xoasitz@gmail.com',
+  phone: '088-888-8888',
+  program: 'se',
+  notes: '-',
   acceptTerms: false
 })
 
