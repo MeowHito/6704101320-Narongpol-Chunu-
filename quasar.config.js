@@ -47,7 +47,7 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/6704101320-Narongpol-Chunu-/',
+      publicPath: './',
       // analyze: true,
       // env: {},
       // rawDefine: {}
