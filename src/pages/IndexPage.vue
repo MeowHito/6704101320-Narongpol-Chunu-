@@ -2,7 +2,7 @@
   <q-page class="q-pa-xl bg-grey-2 flex flex-center">
     <q-card class="form-card" flat bordered>
       <q-card-section class="text-center q-gutter-xs">
-        <div class="text-h5 text-primary">Student Information Form</div>
+        <div class="text-h5 text-primary">Form</div>
         <div class="text-subtitle2 text-grey-7">
           Provide your basic information and confirm before submitting.
         </div>
